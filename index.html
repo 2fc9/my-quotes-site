@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدونتي الشخصية | اقتباسات وحكم</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>📖 مدونتي البرمجية</h1>
+        <p>اقتباسات، حكم، وأقوال تُنشر مباشرة من التليجرام</p>
+        <div class="tabs">
+            <button class="tab-btn active" onclick="switchTab('quote')">💬 اقتباسات</button>
+            <button class="tab-btn" onclick="switchTab('wisdom')">💡 حكم</button>
+            <button class="tab-btn" onclick="switchTab('book')">📚 كتب</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- هذا المكان اللي راح تنزل بيه المنشورات تلقائياً -->
+        <div id="content-container" class="grid-container">
+            <p class="loading">جاري تحميل المنشورات...</p>
+        </div>
+    </main>
+
+    <script href="app.js"></script>
+</body>
+</html>
